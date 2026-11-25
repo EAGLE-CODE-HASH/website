@@ -1,0 +1,6 @@
+{
+  "name": "JanjiSuci — Undangan Pernikahan",
+  "description": "Undangan pernikahan digital interaktif lengkap dengan hitung mundur, galeri momen, kisah cinta, RSVP, buku tamu, pemutar musik, dan studio tema.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

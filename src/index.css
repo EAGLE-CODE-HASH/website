@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ivory: #f7f3eb;
+    --ivory-alt: #f0ece3;
+    --paper: #fffdf8;
+    --ink: #373a32;
+    --muted: #6e6f65;
+    --gold: #b79a62;
+    --sage: #738268;
+    --line: #e4dccd;
+    --footer-bg: #ede8dc;
+    --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .theme-classic {
+    --ivory: #f7f3eb;
+    --ivory-alt: #f0ece3;
+    --paper: #fffdf8;
+    --ink: #373a32;
+    --muted: #6e6f65;
+    --sage: #738268;
+    --line: #e4dccd;
+    --footer-bg: #ede8dc;
+  }
+
+  .theme-floral {
+    --ivory: #f8f2f1;
+    --ivory-alt: #f1e8e7;
+    --paper: #fffafa;
+    --ink: #383333;
+    --muted: #706666;
+    --sage: #78886e;
+    --line: #e8dada;
+    --footer-bg: #efe4e3;
+  }
+
+  .theme-heritage {
+    --ivory: #f2eadb;
+    --ivory-alt: #e9decb;
+    --paper: #fbf5e9;
+    --ink: #342f26;
+    --muted: #6a6254;
+    --sage: #5c6b52;
+    --line: #dfd2bc;
+    --footer-bg: #e5d9c4;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--ivory);
+    color: var(--ink);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--ivory);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
